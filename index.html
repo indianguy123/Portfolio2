@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sankalp Dixit</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sankalp Dixit</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- Change Your profile pic here -->
+        <img src="./assests/profile-pic.png" alt="Sankalp Dixit" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello👋 I'm</p>
+        <h1 class="title">Sankalp Dixit</h1>
+        <p class="section__text__p2">MERN-Stack/Blockchain Developer</p>
+        
+        
+        <!-- change -->
+        <div class="btn-container">
+          <!-- Change the resume-example here -->
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assests/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sankalp-dixit-05112a240/'"
+          />
+          <img
+            src="./assests/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/indianguy123'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assests/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assests/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                I've worked with a range of technologies related to website
+                development.
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assests/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Pre-Final Year Electronics and Communications Student at IIIT,
+                Ranchi.
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <span id="element"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assests/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <!-- change the projects here -->
+          <div class="article-container">
+            <img
+              src="./assests/project-1.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2c class="experience-sub-title project-title">Foodmine-App</h2>
+            <div class="btn-container">
+              <!-- change the project link here -->
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/indianguy123/Foodmine-mern.git'">
+                Github
+              </button>
+              <!-- change the hosted link here -->
+              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/indianguy123/react-movie.git'">
+                Live Demo
+              </button> -->
+            </div>
+        </div>
+        <div class="details-container color-container">
+          <!-- change the projects here -->
+          <div class="article-container">
+            <img
+              src="./assests/project-2.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2c class="experience-sub-title project-title">Chillflix Movie-API</h2>
+            <div class="btn-container">
+              <!-- change the project link here -->
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <!-- change the hosted link here -->
+              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button> -->
+            </div>
+        </div>
+        <div class="details-container color-container">
+          <!-- change the projects here -->
+          <div class="article-container">
+            <img
+              src="./assests/project-3.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2c class="experience-sub-title project-title">Decentralized Drive</h2>
+            <div class="btn-container">
+              <!-- change the project link here -->
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <!-- change the hosted link here -->
+              <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button> -->
+            </div>
+        </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assests/email.png" alt="Email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:sankalpdixitiiit@gmail.com">sankalpdixitiiit@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assests/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/sankalp-dixit-05112a240/">LinkedIn</a></p>
+        </div>
+        
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Sankalp Dixit. All Rights Reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Passionate about Web Dev!",
+          "Love to play Football and Badminton in spare time.",
+        ],
+        typeSpeed: 30,
+        loop: true,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
